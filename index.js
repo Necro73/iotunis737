@@ -15,8 +15,7 @@ var num = [];
 		function sendForm(event)
 		{
 			// получаем значение поля кнопки
-      console.log(event.target.id.split('_')[1]);
-			var idopj = event.target.id
+			var idopj = event.target.id;
 			if(num[idopj] == truer[0])
 			{
 				alert("Успех!");
@@ -27,10 +26,10 @@ var num = [];
 			}
 		}
  
-    for (var i = 1; i < 49; i++)
-    {
-      num[i] = i;
-    }
+    //for (var i = 1; i < 49; i++)
+   // {
+   //   num[i-1] = i;
+  //  }
 
     for (var i = 1; i < 49; i++)
     {
