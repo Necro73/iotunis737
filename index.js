@@ -24,12 +24,12 @@ function sendForm(event)
 	{
 		alert("Провал!");
 	}
-	}
+}
  
-//for (var i = 1; i < 49; i++)
-//{
-//  num[i-1] = i;
-//}
+for (var i = 1; i < 49; i++)
+{
+  num[i-1] = i;
+}
 
 for (var i = 1; i < 49; i++)
 {
