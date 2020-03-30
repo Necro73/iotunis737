@@ -12,12 +12,12 @@ var num = [];
 		truer[3] = 4;
 		truer[4] = 5;
 		truer[5] = 6;
-		function sendForm()
+		function sendForm(event)
 		{
 			// получаем значение поля кнопки
-			var keyBox = document.getElementById("valuer_1");
-			var val = keyBox.value;
-			if(val == truer[0])
+      console.log(event.target.id.split('_')[1]);
+			var idopj = event.target.id
+			if(num[idopj] == truer[0])
 			{
 				alert("Успех!");
 			}
@@ -27,5 +27,13 @@ var num = [];
 			}
 		}
  
-		var sendButton_1 = document.getElementById("valuer_1");
-		sendButton_1.addEventListener("click", sendForm);
+    for (var i = 1; i < 49; i++)
+    {
+      num[i] = i;
+    }
+
+    for (var i = 1; i < 49; i++)
+    {
+      var sendButton = document.getElementById("valuer_" + i);
+      sendButton.addEventListener("click", sendForm);
+    }
