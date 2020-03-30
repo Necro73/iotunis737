@@ -15,7 +15,7 @@ truer[5] = 6;
 function sendForm(event)
 {
 	// получаем значение поля кнопки
-	var idopj = event.target.id;
+	var idopj = event.target.id.split('_')[1];
 	if(num[idopj] == truer[0])
 	{
 		alert("Успех!");
@@ -28,7 +28,7 @@ function sendForm(event)
  
 for (var i = 1; i < 49; i++)
 {
-  num[i-1] = i;
+  num[i] = i;
 }
 
 for (var i = 1; i < 49; i++)
